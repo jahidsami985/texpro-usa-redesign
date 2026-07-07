@@ -672,6 +672,207 @@
   text-align: right;
 }
 
+.tx-catalogue-nav-section {
+  padding-block: 28px;
+  border-bottom: 1px solid var(--tx-border);
+}
+
+.tx-product-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tx-product-nav__chip {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  border: 1px solid rgba(8, 26, 51, 0.1);
+  border-radius: 999px;
+  background: var(--tx-white);
+  color: var(--tx-navy);
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 8px 22px rgba(8, 26, 51, 0.06);
+  transition: border-color var(--tx-transition), color var(--tx-transition), transform var(--tx-transition), box-shadow var(--tx-transition);
+}
+
+.tx-product-nav__chip:hover,
+.tx-product-nav__chip:focus-visible {
+  border-color: rgba(11, 124, 255, 0.36);
+  color: var(--tx-blue);
+  box-shadow: 0 12px 28px rgba(8, 26, 51, 0.1);
+  transform: translateY(-1px);
+}
+
+.tx-catalogue-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.tx-catalogue-card {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.tx-catalogue-card__media {
+  display: flex;
+  height: 260px;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  border-bottom: 1px solid var(--tx-border);
+  background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+}
+
+.tx-catalogue-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 320ms ease;
+}
+
+.tx-catalogue-card:hover .tx-catalogue-card__media img {
+  transform: scale(1.025);
+}
+
+.tx-catalogue-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 14px;
+  padding: 22px;
+}
+
+.tx-catalogue-card__title {
+  margin: 0;
+  color: var(--tx-navy);
+  font-size: 1.12rem;
+  font-weight: 850;
+  line-height: 1.25;
+}
+
+.tx-catalogue-card__copy {
+  display: -webkit-box;
+  min-height: 4.45em;
+  margin: 0;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  color: var(--tx-text-muted);
+  font-size: 0.94rem;
+  line-height: 1.48;
+}
+
+.tx-product-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tx-product-chip-list li {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  padding: 5px 9px;
+  border: 1px solid rgba(11, 124, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(11, 124, 255, 0.07);
+  color: var(--tx-navy);
+  font-size: 0.78rem;
+  font-weight: 750;
+  line-height: 1.15;
+}
+
+.tx-feature-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 14px 0 0;
+  border-top: 1px solid var(--tx-border);
+  list-style: none;
+}
+
+.tx-feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: var(--tx-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.tx-feature-list li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  flex: 0 0 6px;
+  margin-top: 0.48em;
+  border-radius: 999px;
+  background: var(--tx-gold);
+  box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.14);
+}
+
+.tx-catalogue-card__button {
+  margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+  .tx-catalogue-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .tx-catalogue-nav-section {
+    padding-block: 18px;
+  }
+
+  .tx-product-nav {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .tx-product-nav__chip {
+    flex: 1 1 220px;
+    min-height: 44px;
+    padding-inline: 12px;
+  }
+
+  .tx-catalogue-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .tx-catalogue-card__media {
+    height: 220px;
+    padding: 14px;
+  }
+
+  .tx-catalogue-card__body {
+    gap: 13px;
+    padding: 18px;
+  }
+
+  .tx-catalogue-card__copy {
+    min-height: 0;
+  }
+}
+
 /* Certification and compliance */
 .tx-cert-grid {
   display: grid;
@@ -729,6 +930,39 @@
   color: var(--tx-text);
   font-size: 0.82rem;
   font-weight: 800;
+}
+
+.tx-logo-proof {
+  max-width: 980px;
+  margin-inline: auto;
+}
+
+.tx-logo-proof__card {
+  display: flex;
+  min-height: 170px;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(18px, 4vw, 36px);
+  border: 1px solid var(--tx-border);
+  border-radius: var(--tx-radius-md);
+  background: var(--tx-white);
+  box-shadow: var(--tx-shadow-sm);
+}
+
+.tx-logo-proof__image {
+  display: block;
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+}
+
+.tx-mobile-section .tx-logo-proof__card {
+  min-height: 130px;
+  padding: 16px;
+}
+
+.tx-mobile-section .tx-logo-proof__image {
+  max-height: 190px;
 }
 
 /* Factory cards */
