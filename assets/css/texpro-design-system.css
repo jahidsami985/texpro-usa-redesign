@@ -448,6 +448,18 @@
   padding-block: clamp(72px, 10vw, 128px);
 }
 
+.tx-hero__content .tx-heading-xl {
+  max-width: min(100%, 760px);
+  font-size: clamp(2.75rem, 4vw, 4rem);
+  line-height: 1.06;
+  overflow-wrap: normal;
+  text-wrap: balance;
+}
+
+.tx-hero__content .tx-copy {
+  max-width: 680px;
+}
+
 .tx-hero__actions,
 .tx-cta-row {
   display: flex;
