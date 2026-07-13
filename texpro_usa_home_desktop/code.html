@@ -12,7 +12,7 @@
 <body class="tx-page tx-desktop-page">
 <header class="tx-navbar">
 <div class="tx-container--wide tx-navbar__inner">
-<a class="tx-navbar__brand" href="#top">Texpro USA</a>
+<a class="tx-navbar__brand" href="#top" aria-label="Texpro USA home"><img class="tx-brand-logo" src="../assets/images/texpro/logos/texpro-nav-logo.svg" alt="Texpro"/></a>
 <nav aria-label="Primary navigation">
 <ul class="tx-navbar__links">
 <li><a class="tx-navbar__link is-active" href="#top">Home</a></li>
@@ -32,9 +32,13 @@
 </header>
 
 <main>
-<section class="tx-hero" id="top">
-<!-- TODO: Replace this homepage fabric/factory image when the client provides the final approved asset. -->
-<div class="tx-hero__media tx-hero__media--bg" data-alt="Modern garment manufacturing floor" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAq4oALKi9IkFz2RCbEwxyFWGOGE34QptwWAHHIjX3_FG-y_hsHpWV06M39nbjYTjTnNtfavCwO6365nYkJBAnhfB3WEv1j58ncVx7GdGpNKkbpTcw-MjjutE5dvgmwFah15EvMch3JCnKqJOD7LovSaiPjanq5ppvhRPCc9PuVidHOdtditWJg3t5pMR3GYjRXj6xeA6iqy4doKb__7rxvfHW1_kI2eEouD83GvbbtJCKyY4KvyrMt')"></div>
+<section class="tx-hero tx-hero--carousel" id="top">
+<div class="tx-hero-carousel" aria-hidden="true">
+<span class="tx-hero-carousel__slide" style="background-image: url('../assets/images/texpro-old/factory/factory-spreading-worker.jpg')"></span>
+<span class="tx-hero-carousel__slide" style="background-image: url('../assets/images/texpro-old/products/hi-vis/1.jpg')"></span>
+<span class="tx-hero-carousel__slide" style="background-image: url('../assets/images/texpro-old/factory/factory-apw-sewing-worker.jpg')"></span>
+<span class="tx-hero-carousel__slide" style="background-image: url('../assets/images/texpro-old/products/jackets-coats/2.jpg')"></span>
+</div>
 <div class="tx-hero__overlay"></div>
 <div class="tx-container--wide">
 <div class="tx-hero__content">
@@ -51,11 +55,17 @@
 <span class="tx-trust-badge"><span aria-hidden="true" class="material-symbols-outlined">factory</span>Own factory setup</span>
 <span class="tx-trust-badge"><span aria-hidden="true" class="material-symbols-outlined">public</span>USA, Canada and Europe</span>
 </div>
+<div class="tx-hero-stat-strip" aria-label="Texpro manufacturing highlights">
+<span><strong>25+</strong><small>years export experience</small></span>
+<span><strong>400K-450K</strong><small>pcs monthly capacity</small></span>
+<span><strong>4,400+</strong><small>skilled workforce</small></span>
+</div>
+<div class="tx-hero-carousel__dots" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
 </div>
 </div>
 </section>
 
-<section class="tx-section tx-section--white" aria-labelledby="glance-title">
+<section class="tx-section tx-section--white tx-home-proof-band" aria-labelledby="glance-title">
 <div class="tx-container">
 <div class="tx-section-header tx-section-header--center">
 <p class="tx-eyebrow">Texpro at a Glance</p>
@@ -75,7 +85,7 @@
 </div>
 </section>
 
-<section class="tx-section tx-section--soft" id="what-we-do">
+<section class="tx-section tx-section--soft tx-home-intro-band" id="what-we-do">
 <div class="tx-container">
 <div class="tx-split">
 <div>
@@ -93,6 +103,29 @@
 <article class="tx-icon-card"><span class="tx-icon-card__icon"><span aria-hidden="true" class="material-symbols-outlined">support_agent</span></span><h3 class="tx-icon-card__title">Buyer Support</h3><p class="tx-icon-card__copy">Merchandising, technical, sampling, production, quality, and shipment communication.</p></article>
 </div>
 </div>
+</div>
+</section>
+
+<section class="tx-section tx-section--white" id="product-preview">
+<div class="tx-container">
+<div class="tx-section-header">
+<p class="tx-eyebrow">Product image preview</p>
+<h2 class="tx-heading-lg">Real product categories for safety wear, workwear and outerwear buyers</h2>
+<p class="tx-copy">A quick visual sample of Texpro product capability, from waterproof jackets and hi-vis garments to coveralls, work pants and utility vests.</p>
+</div>
+<div class="tx-home-image-showcase">
+<figure class="tx-home-featured-image">
+<img src="../assets/images/texpro-old/factory/factory-apw-sewing-worker.jpg" alt="Texpro worker operating advanced sewing machinery" loading="lazy"/>
+<figcaption><span>Production floor</span><strong>Factory capability backed by real worker and machinery imagery.</strong></figcaption>
+</figure>
+<div class="tx-home-gallery-list">
+<article class="tx-home-image-card"><div class="tx-home-image-card__media"><img src="../assets/images/texpro-old/products/jackets-coats/2.jpg" alt="Texpro jackets and outerwear product sample" loading="lazy"/></div><div class="tx-home-image-card__body"><h3>Jackets &amp; Outerwear</h3><p>Waterproof, softshell and insulated workwear programs.</p></div></article>
+<article class="tx-home-image-card"><div class="tx-home-image-card__media"><img src="../assets/images/texpro-old/products/hi-vis/1.jpg" alt="Texpro high-visibility safety wear product sample" loading="lazy"/></div><div class="tx-home-image-card__body"><h3>Hi-Vis Safety Wear</h3><p>Reflective garments for industrial and utility buyers.</p></div></article>
+<article class="tx-home-image-card"><div class="tx-home-image-card__media"><img src="../assets/images/texpro-old/products/coveralls/1.jpg" alt="Texpro coverall product sample" loading="lazy"/></div><div class="tx-home-image-card__body"><h3>Coveralls</h3><p>Industrial coveralls, FR options and uniform programs.</p></div></article>
+<article class="tx-home-image-card"><div class="tx-home-image-card__media"><img src="../assets/images/texpro-old/products/pants-shorts/1.jpg" alt="Texpro workwear pants product sample" loading="lazy"/></div><div class="tx-home-image-card__body"><h3>Work Pants</h3><p>Cargo, utility and outdoor pants with custom trims.</p></div></article>
+</div>
+</div>
+<div class="tx-cta-row"><a class="tx-btn tx-btn--dark" href="../executive_garment_manufacturing/code.html">View Product Catalogue</a><a class="tx-btn tx-btn--outline" href="../manufacturing_facilities_desktop/code.html">See Factory Workers</a></div>
 </div>
 </section>
 
@@ -124,6 +157,7 @@
 <p class="tx-copy">Texpro supports international buyers with recognized compliance, quality, and responsible manufacturing standards.</p>
 </div>
 <div class="tx-logo-proof"><div class="tx-logo-proof__card"><img class="tx-logo-proof__image" alt="Texpro certifications and compliance logos" loading="lazy" src="../assets/images/texpro/logos/certifications-compliance.jpg"/></div></div>
+<ul class="tx-cert-pills tx-cert-pills--center" aria-label="Texpro certification list"><li class="tx-cert-pill">WRAP Gold</li><li class="tx-cert-pill">BSCI</li><li class="tx-cert-pill">SEDEX</li><li class="tx-cert-pill">GRS</li><li class="tx-cert-pill">OEKO-TEX</li><li class="tx-cert-pill">ISO 9001</li><li class="tx-cert-pill">ISO 14001</li><li class="tx-cert-pill">CTPAT</li><li class="tx-cert-pill">RSC / Accord</li></ul>
 </div>
 </section>
 
@@ -141,7 +175,7 @@
 <section class="tx-section tx-section--soft" id="factories">
 <div class="tx-container">
 <div class="tx-strength-grid">
-<div class="tx-strength-visual" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAq4oALKi9IkFz2RCbEwxyFWGOGE34QptwWAHHIjX3_FG-y_hsHpWV06M39nbjYTjTnNtfavCwO6365nYkJBAnhfB3WEv1j58ncVx7GdGpNKkbpTcw-MjjutE5dvgmwFah15EvMch3JCnKqJOD7LovSaiPjanq5ppvhRPCc9PuVidHOdtditWJg3t5pMR3GYjRXj6xeA6iqy4doKb__7rxvfHW1_kI2eEouD83GvbbtJCKyY4KvyrMt')"><div class="tx-strength-visual__content"><p class="tx-eyebrow">Operational scale</p><h3 class="tx-heading-md">Reliable output without sacrificing control</h3></div></div>
+<div class="tx-strength-visual" style="background-image: url('../assets/images/texpro-old/factory/factory-template-machine-worker.jpg')"><div class="tx-strength-visual__content"><p class="tx-eyebrow">Operational scale</p><h3 class="tx-heading-md">Real factory workers, machinery and production control</h3></div></div>
 <div class="tx-strength-stack">
 <article class="tx-metric-card"><span class="tx-metric-card__value">400K-450K</span><span class="tx-metric-card__label">Monthly Capacity in pcs</span></article>
 <article class="tx-metric-card"><span class="tx-metric-card__value">7-10</span><span class="tx-metric-card__label">Days sample development</span></article>

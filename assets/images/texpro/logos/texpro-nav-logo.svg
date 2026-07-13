@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 190" role="img" aria-labelledby="title desc">
+  <title id="title">Texpro logo</title>
+  <desc id="desc">White TEXPRO wordmark on a navy background with a red accent mark.</desc>
+  <rect width="800" height="190" fill="#171E3D"/>
+  <path d="M352 54h52l-23 22h-52z" fill="#EC1E4F"/>
+  <text x="72" y="121" fill="#FFFFFF" font-family="Arial Black, Impact, Arial, sans-serif" font-size="88" font-weight="900" letter-spacing="8">TEXPRO</text>
+</svg>
