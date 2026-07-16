@@ -199,9 +199,9 @@
 
 .tx-brand-logo {
   display: block;
-  width: clamp(132px, 11vw, 178px);
-  height: auto;
-  max-height: 42px;
+  width: auto;
+  max-width: 132px;
+  height: clamp(44px, 3.7vw, 56px);
   object-fit: contain;
 }
 
@@ -1714,8 +1714,9 @@ textarea.tx-form-control {
 }
 
 .tx-mobile-header__brand .tx-brand-logo {
-  width: 128px;
-  max-height: 34px;
+  width: auto;
+  max-width: 96px;
+  height: 40px;
 }
 
 .tx-mobile-header__button {
